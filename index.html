@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'; upgrade-insecure-requests">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#09090a">
+<title>OMI's Portfolio</title>
+<meta name="description" content="MD Tamzid Hossen Omi — IoT & Robotics Engineer, AI/ML, Software.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-ring-wrap">
+    <div class="loader-ring"></div>
+    <div class="loader-ring loader-ring-two"></div>
+    <div class="loader-pct" id="loaderPct">0%</div>
+  </div>
+  <div class="loader-logo"><b>Welcome</b><span>To</span></div>
+  <p><b>MY CORNER OF THE INTERNET</b></p>
+  <i></i>
+  <div class="loader-steps" aria-hidden="true">
+    <span><b>01</b> INITIALIZING PROFILE</span><span><b>02</b> LOADING RESEARCH</span><span><b>03</b> SYNCING REPOSITORIES</span>
+  </div>
+  <div class="loader-words">
+    <span>RESEARCH.</span><span>ARCHITECT.</span><strong>DEVELOP.</strong><span>OPTIMIZE.</span><span>DEPLOY.</span><span>INNOVATE.</span>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<div class="portfolio-shell">
+  <canvas class="particle-canvas" id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="data-transfer" id="dataTransfer" aria-hidden="true"></div>
+  <div class="pointer-effects" aria-hidden="true">
+    <div class="pointer-trail" id="pointerTrail"></div>
+    <div class="pointer-beam" id="pointerBeam"><span>SEND</span></div>
+    <div class="pointer-ring" id="pointerRing"></div>
+    <div class="pointer-dot" id="pointerDot"></div>
+  </div>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="logo" href="#home" aria-label="Tamzid Omi, home"><span class="logo-script">Tamzid Omi</span></a>
+    <nav id="topNav" aria-label="Primary">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#research">Research</a><a href="#achievements">Awards</a><a href="#activities">Activities</a><a href="#contact">Contact</a>
+      <button class="nav-cta" id="navResume" type="button">Resume</button>
+    </nav>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <aside class="side side-left" id="sideLeft" aria-label="Social links"></aside>
+  <aside class="side side-right" id="sideRight" aria-label="Email">
+    <a href="mailto:tamzid.omi@gmail.com">tamzid.omi@gmail.com</a><i></i>
+  </aside>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="float-icon fi-code">&lt;/&gt;</div><div class="float-icon fi-brain">AI</div><div class="float-icon fi-trophy">⚙</div><div class="float-icon fi-idea">IoT</div>
+      <div class="micro-float mf-one">RF</div><div class="micro-float mf-two">LLM</div><div class="micro-float mf-three">Py</div><div class="micro-float mf-four">LaTex</div>
+      <div class="micro-float mf-five">RB</div><div class="micro-float mf-six">CV</div><div class="micro-float mf-seven">DB</div><div class="micro-float mf-eight">⚡</div>
+      <div class="hero-grid">
+        <div class="hero-center">
+          <p><b>CURIOUS BY NATURE   ·   ENGINEERED BY THINKING</b></p>
+          <h1>MD TAMZID HOSSEN <span class="hl">OMI</span></h1>
+          <div class="interest-line" id="interestLine" aria-label="AI Enthusiast, IoT Learner, Robotics Explorer, Research Enthusiast">
+            <span id="interestType"></span><i class="type-cursor" aria-hidden="true"></i>
+          </div>
+          <h3>ENGINEERED BY <span>LOGIC</span>   , EXPLORING BY <span>INSTINCT</span>   , REIMAGINING REALITY BY <span>DESIGN</span>.</h3>
+          <div class="hero-actions">
+            <a href="#contact">LET'S CONNECT</a>
+            <button id="openResume" type="button">VIEW RESUME</button>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-down" href="#about"><span>SCROLL</span>↓</a>
+    </section>
+
+    <section class="content-section about reveal" id="about">
+      <h2 class="section-title" data-tag="ABOUT">About Me - <span>BEHIND THE SYSTEMS!</span></h2>
+      <div class="screen about-screen">
+        <div class="screen-bar"><i></i><i></i><i></i><span>MD TAMZID HOSSEN OMI</span><em>● LIVE</em></div>
+        <div class="screen-body about-v2">
+          <figure class="about-figure">
+            <div class="photo-frame about-photo">
+              <span class="frame-corner tl"></span><span class="frame-corner tr"></span>
+              <span class="frame-corner bl"></span><span class="frame-corner br"></span>
+              <picture>
+                <source type="image/webp" srcset="assets/images/about/portrait-360.webp 360w, assets/images/about/portrait-540.webp 540w, assets/images/about/portrait.webp 703w" sizes="(max-width: 760px) min(72vw, 320px), (max-width: 1100px) 34vw, 340px">
+                <img src="assets/images/about/portrait-540.webp" alt="Portrait of MD Tamzid Hossen Omi" width="703" height="900" loading="lazy" decoding="async">
+              </picture>
+              <figcaption class="photo-hud"><b>MD Tamzid Hossen Omi</b><span>IoT, Robotics &amp; AI Engineer</span></figcaption>
+            </div>
+            <div class="photo-badges" aria-hidden="true"><span>IoT &amp; Robotics</span><span>AI / RAG</span><span>Full-Stack</span></div>
+          </figure>
+          <div class="about-copy">
+            <p class="about-lead">A B.Sc. graduate in IoT and Robotics Engineering from University of Frontier Technology, Bangladesh, operating at the intersection of embedded intelligence, autonomous systems and applied artificial intelligence. As a co-author of an IEEE research paper on an autonomous disaster-response rover and a researcher contributing to JuteRAG, I explore how intelligent technologies can address complex and real-world challenges.</p>
+            <p>My engineering practice spans publicly released repositories, encompassing retrieval-augmented generation (RAG) platforms, web and mobile applications, FastAPI services and embedded systems. From low-level firmware to intelligent software architectures, I focus on transforming abstract ideas into robust, integrated and deployable solutions.</p>
+            <h3 class="mini-title">Core Expertise</h3>
+            <ul class="core-list" id="coreList"></ul>
+          </div>
+        </div>
+        <div class="screen-glare"></div>
+      </div>
+      <div class="about-stats-row" id="aboutStats"></div>
+      <div class="philosophy" id="philosophy"></div>
+    </section>
+
+
+    <section class="content-section skills reveal" id="skills">
+      <h2 class="section-title" data-tag="SKILLS">Domain Expertise - <span>SKILLS &amp; TECHNOLOGIES!</span></h2>
+      <div class="domains" id="domains"></div>
+    </section>
+
+    <section class="content-section reveal" id="projects">
+      <h2 class="section-title" data-tag="PROJECTS">Projects - <span>WHAT I'VE BUILT!</span></h2>
+      <div class="notable" id="notable">
+        <div class="notable-head bar">
+          <div class="np-tabs" id="npTabs" role="tablist" aria-label="Project categories"></div>
+        </div>
+        <div class="np-grid" id="npGrid" aria-live="polite"></div>
+        <div class="np-more"><button class="btn-ghost np-more-btn" id="npMore" type="button"></button><a class="btn-solid" href="https://github.com/tamzid16?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories on GitHub ↗</a></div>
+      </div>
+    </section>
+
+    <section class="content-section research reveal" id="research">
+      <h2 class="section-title" data-tag="RESEARCH">Featured Research - <span>WHAT I'VE WORK ON!</span></h2>
+      <div class="research-grid" id="researchGrid"></div>
+    </section>
+
+
+    <section class="content-section reveal" id="achievements">
+      <h2 class="section-title" data-tag="AWARDS">Awards &amp; Achievements - <span>LEARNING MILESTONES!</span></h2>
+      <div class="ach-filters" id="achFilters" role="tablist" aria-label="Achievement categories"></div>
+      <div class="ach-grid" id="achGrid"></div>
+      <div class="np-more"><button class="btn-ghost" id="achMore" type="button"></button></div>
+    </section>
+
+    <section class="content-section reveal" id="activities">
+      <h2 class="section-title" data-tag="ACTIVITIES">Extracurricular Activities - <span>BEYOND THE LAB!</span></h2>
+      <div class="act-grid" id="actGrid"></div>
+    </section>
+
+    <section class="content-section reveal" id="profiles">
+      <h2 class="section-title" data-tag="PROFILES">Web Presence - <span>CONNECT BEYOND THE CODE!</span></h2>
+      <div class="profile-identity"><div>O M I</div><span>@tamzid.omi</span></div>
+      <div class="np-grid prof-grid" id="profileGrid"></div>
+      <p class="profile-note">Explore my work further through the profiles and portfolio sections above.</p>
+    </section>
+
+    <section class="content-section puzzle reveal" id="puzzle">
+      <h2 class="section-title" data-tag="INFERENCE LAB">Inference Lab - <span>CAN YOU TRUST THE MODEL?</span></h2>
+      <div class="puzzle-case">
+        <div class="case-file ai-case">
+          <div class="case-file-head">
+            <span>AI RELIABILITY CHALLENGE</span>
+            <button class="new-puzzle-btn" id="newPuzzleBtn" type="button">⟳ NEW PUZZLE</button>
+          </div>
+          <h3 id="puzzleQuestion">Which crop-disease prediction should reach the farmer?</h3>
+          <p class="ai-rule" id="puzzleRule">Trust a result only when retrieval is verified, image quality is not low, confidence is at least 80%, and calibration gap is below 8%.</p>
+          <div class="model-table" id="modelTable"></div>
+        </div>
+        <div class="deduction-panel ai-result">
+          <div class="score-panel">
+            <div class="score-block"><b id="scoreVal">0</b><span>SCORE</span></div>
+            <div class="score-block streak-block"><b id="streakVal">0</b><span>STREAK</span></div>
+          </div>
+          <small>YOUR INFERENCE</small>
+          <div class="inference-orb" id="inferenceOrb"><b id="orbSymbol">?</b><span id="orbLabel">Select a model</span></div>
+          <p id="inferenceMsg">Evaluate evidence, not confidence alone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section gallery reveal" id="gallery">
+      <h2 class="section-title" data-tag="GALLERY">Project Gallery - <span>THROUGH THE SCREEN!</span></h2>
+      <div class="coverflow" id="coverflow" aria-roledescription="carousel" aria-label="Project screens">
+        <button class="cf-btn prev" id="cfPrev" type="button" aria-label="Previous screen">&#8249;</button>
+        <div class="cf-stage" id="cfStage"></div>
+        <button class="cf-btn next" id="cfNext" type="button" aria-label="Next screen">&#8250;</button>
+      </div>
+      <div class="cf-caption" id="cfCaption" aria-live="polite"></div>
+      <div class="cf-dots" id="cfDots"></div>
+    </section>
+
+    <section class="content-section contact reveal" id="contact">
+      <div class="contact-intro">
+        <span class="contact-kicker">GET IN TOUCH</span>
+        <h2 class="contact-title">Let's build something <em>together.</em></h2>
+        <p>I am looking for graduate-level roles in IoT, Robotics or Software Engineering. My inbox is always open for roles, research collaboration or a quick hello.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-side">
+          <div class="contact-card">
+            <h3>Contact Information</h3>
+            <div class="contact-links" id="contactLinks"></div>
+          </div>
+          <div class="open-card">
+            <span class="open-pill"><i class="open-dot" aria-hidden="true"></i>Available for work</span>
+            <p>Graduate-level roles in IoT, Robotics and Software Engineering, plus research assistant positions in multimodal AI and edge intelligence.</p>
+          </div>
+        </div>
+        <div class="contact-console">
+          <div class="signal-head"><span><i></i>SIGNAL ONLINE</span><b>DIRECT MESSAGE</b></div>
+          <form class="contact-form-el" id="contactForm" autocomplete="on">
+            <div class="cf-two">
+              <label><input name="name" id="cf-name" autocomplete="name" placeholder="Your name" maxlength="100" required aria-label="Your name"><span>01</span></label>
+              <label><input name="email" id="cf-email" type="email" autocomplete="email" placeholder="Your email" maxlength="254" required aria-label="Your email"><span>02</span></label>
+            </div>
+            <label><input name="subject" id="cf-subject" placeholder="Subject" maxlength="140" required aria-label="Subject"><span>03</span></label>
+            <label><textarea name="message" id="cf-msg" placeholder="Transmit your idea..." rows="5" maxlength="600" required aria-label="Message"></textarea><span>04</span></label>
+            <div class="message-meter"><i id="meterBar"></i><small id="meterText">0/600 SIGNAL STRENGTH</small></div>
+            <button type="submit">TRANSMIT MESSAGE　➤</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="quote-wall" aria-label="Closing quotes">
+      <figure class="qcard qk-luffy"><blockquote>If you don't take risks, you can't create a future.</blockquote><figcaption>Monkey D. Luffy</figcaption></figure>
+      <figure class="qcard qk-sherlock"><blockquote>THE GAME IS ON</blockquote><figcaption>Sherlock Holmes</figcaption></figure>
+      <figure class="qcard qk-ironman"><blockquote>Sometimes you gotta run before you can walk.</blockquote><figcaption>Iron Man</figcaption></figure>
+      <figure class="qcard qk-professor"><blockquote>The moment people think they have nothing left to lose, they become completely unpredictable.</blockquote><figcaption>The Professor</figcaption></figure>
+      <figure class="qcard qk-scofield"><blockquote>Preparation can only take you so far. After that, you've got to take a few leaps of faith.</blockquote><figcaption>Michael Scofield</figcaption></figure>
+    </div>
+    <a class="footer-logo" href="#home"><span class="logo-script">Tamzid Omi</span></a>
+    <p>Innovation at the Intersection of Intelligence and Engineering!</p>
+    <nav class="footer-nav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#research">Research</a><a href="#achievements">Awards</a><a href="#activities">Activities</a><a href="#profiles">Profiles</a><a href="#puzzle">Puzzle</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/md-tamzid-hossen-omi-93000a2b9" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+      <a href="https://github.com/tamzid16" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+      <a href="mailto:tamzid.omi@gmail.com" aria-label="Email">✉</a>
+    </div>
+    <small>© 2026 MD Tamzid Hossen Omi. All rights reserved.</small>
+    <div class="footer-handle">@tamzid.omi</div>
+  </footer>
+  <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+
+  <div class="chatbot" id="chatbot">
+    <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
+      <span class="chatbot-toggle-icon" aria-hidden="true">✦</span>
+      <span class="chatbot-toggle-label">Ask Omi</span>
+    </button>
+    <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Chat with Omi" aria-hidden="true">
+      <div class="chatbot-head">
+        <div><b>OMI</b><span>Ask about my skills, projects, or research</span></div>
+        <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chat">×</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages" aria-live="polite"></div>
+      <div class="chatbot-suggestions" id="chatbotSuggestions"></div>
+      <form class="chatbot-input-row" id="chatbotForm">
+        <input id="chatbotInput" type="text" maxlength="200" placeholder="Ask about my skills, projects, research…" autocomplete="off">
+        <button type="submit" aria-label="Send">➤</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="resumeModal" role="dialog" aria-modal="true" aria-label="Resume">
+    <div class="resume">
+      <button id="closeResume" type="button" aria-label="Close resume">×</button>
+      <span>MY RESUME · ON PAPER!</span>
+      <h2>MD TAMZID HOSSEN OMI</h2>
+      <h3>IoT &amp; Robotics Engineer · AI/ML · Software</h3>
+      <div class="resume-grid">
+        <article><b>CORE</b><p>AI/ML, Robotics, IoT, Embedded Systems and Software Engineering.</p></article>
+        <article><b>RESEARCH</b><p>JuteRAG — multimodal RAG for crop and jute disease diagnosis.</p></article>
+        <article><b>HIGHLIGHT</b><p>IEEE QPAIN 2026 co-author for WatchRover.</p></article>
+        <article><b>PROJECTS</b><p>20+ public repositories across RAG platforms, mobile, and embedded systems.</p></article>
+      </div>
+      <div class="resume-cta">
+        <a href="Tamzid_Hossen_Omi_CV.pdf" download>DOWNLOAD PDF　➤</a>
+        <a href="mailto:tamzid.omi@gmail.com?subject=Resume%20request">EMAIL ME　➤</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="actModal" role="dialog" aria-modal="true" aria-labelledby="actTitle">
+    <div class="resume act-modal">
+      <button id="closeAct" type="button" aria-label="Close details">×</button>
+      <span id="actKind"></span>
+      <h2 id="actTitle"></h2>
+      <h3 id="actRole"></h3>
+      <p id="actDesc" class="act-desc"></p>
+      <ul id="actPoints" class="act-points"></ul>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

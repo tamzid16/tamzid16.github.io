@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(335,70%,14%)"/><stop offset="1" stop-color="hsl(25,75%,7%)"/></linearGradient>
+<radialGradient id="gl" cx=".72" cy=".25" r=".7"><stop offset="0" stop-color="hsl(335,90%,58%)" stop-opacity=".55"/><stop offset="1" stop-color="hsl(335,90%,58%)" stop-opacity="0"/></radialGradient>
+<pattern id="gr" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".06"/></pattern>
+</defs>
+<rect width="400" height="400" fill="url(#bg)"/><rect width="400" height="400" fill="url(#gr)"/><rect width="400" height="400" fill="url(#gl)"/>
+<rect x="132.0" y="70.80000000000001" width="136.0" height="258.4" rx="19.040000000000003" fill="hsl(335,50%,9%)" stroke="hsl(335,95%,66%)" stroke-width="4"/><path d="M145.6 174.16 q27.200000000000003 -31.007999999999996 54.400000000000006 0 t54.400000000000006 0 M145.6 220.672 q27.200000000000003 -25.84 54.400000000000006 0 t54.400000000000006 0" fill="none" stroke="hsl(355,90%,62%)" stroke-width="3"/><path d="M200.0 122.48 c21.76 0 21.76 25.84 0 41.343999999999994 c-21.76 -15.503999999999998 -21.76 -41.343999999999994 0 -41.343999999999994z" fill="#ff5d73"/><rect x="151.04" y="272.352" width="97.92" height="25.84" rx="12.92" fill="#ff5d73"/><text x="200.0" y="289.14799999999997" fill="#fff" font-family="Arial" font-weight="700" font-size="14" text-anchor="middle">SOS</text></svg>
